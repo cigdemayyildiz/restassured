@@ -52,7 +52,7 @@ public class SlackMessage {
         RestAssured.basePath = "api/conversations.history";
 
         Response response = RestAssured.given().accept(APPLICATION_JSON)
-                .header("Authorization", "Bearer xoxb-2352965083346-2829675893763-bvAEeBQIi5jco8IwLq4nYuP4")
+                .header("Authorization", "")
                 .param("channel", "C02QAME99B7")
                 .when().get()
                 .then().statusCode(200)
