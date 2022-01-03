@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-03T21:37:11.984Z",
+        "line": 3,
+        "name": "Find competition id",
+        "description": "",
+        "id": "testing-football-api;find-competition-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 508000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have football competition endpoint",
+            "match": {
+              "location": "step_definitions.FootballStepDefs.i_have_football_competition_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2278000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I send GET request to retrieve list of competitions",
+            "match": {
+              "location": "step_definitions.FootballStepDefs.i_send_get_request_to_retrieve_list_of_competitions()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "step_definitions.FootballStepDefs.status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 670000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "competitions list must be more than 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 36
+                }
+              ],
+              "location": "step_definitions.FootballStepDefs.competitions_list_must_be_more_than(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@football"
+          }
+        ]
+      }
+    ],
+    "name": "Testing football api",
+    "description": "",
+    "id": "testing-football-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Football.feature",
+    "tags": []
+  }
+]
