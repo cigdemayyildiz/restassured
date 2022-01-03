@@ -22,7 +22,7 @@ public class SlackMessage {
         Response response = RestAssured.given().accept(APPLICATION_JSON)
                 .contentType(APPLICATION_JSON)
                 .body(PayloadUtils.getSlackPayload("Hello!!"))
-                .header("Authorization", "")
+                .header("Authorization", "Bearer xoxb-2352965083346-2829675893763-bvAEeBQIi5jco8IwLq4nYuP4")
                 .when().post()
                 .then().statusCode(200)
                 .contentType("application/json; charset=utf-8")
